@@ -4,7 +4,7 @@ import logger from "morgan";
 
 import path from "path";
 
-import TelegramBot from "./telegramBot/TelegramBot";
+import TelegramBot from "./sampleBot/SampleBot";
 
 const telegramBot = new TelegramBot();
 
