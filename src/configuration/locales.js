@@ -1,3 +1,8 @@
+/**
+ * locales dictionary
+ *
+ * @type {Object}
+ */
 const locales = {
   en: {
     isDefault: true,

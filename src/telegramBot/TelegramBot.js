@@ -7,8 +7,8 @@ import _ from "lodash";
 
 import locales from "../configuration/locales";
 /**
- * [TelegramBot description]
- *
+ *  Abstract class for Telegram bot
+ *  Class implements Telegram bot functions
  */
 class TelegramBot {
   bot;

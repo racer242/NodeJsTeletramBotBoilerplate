@@ -1,8 +1,9 @@
 import { Markup } from "telegraf";
 import TelegramBot from "../telegramBot/TelegramBot";
+
 /**
- * [TelegramBot description]
- *
+ * Sample class for telegram bot
+ * Class implements user mechanics
  */
 class Sample extends TelegramBot {
   async initCtx(ctx) {
