@@ -8,8 +8,22 @@ I will translate it into another language 📓
     `,
     help: `How can I help you man?
     `,
+    canceled: `The keyboard is closed`,
+    tested: `Tested!`,
+    key: `Here is an example of a keyboard:`,
+    before: "Counter equals: ${c}",
+    increased: "Counter increased: ${c}",
     commands: {
       help: "I'll help in any way I can",
+      key: "Keyboard example",
+      inc: "Increment counter",
+    },
+    buttons: {
+      inline: "This is a check button",
+    },
+    keyboards: {
+      cancel: "✖️ Cancel",
+      test: "☝️ Check",
     },
   },
   ru: {

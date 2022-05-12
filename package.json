@@ -23,12 +23,12 @@
     "javascript",
     "es6"
   ],
-  "author": "Geeky-Geeky",
-  "license": "ISC",
+  "author": "Racer242",
+  "license": "",
   "bugs": {
-    "url": "https://github.com/GeekyGeeky/es6_setup_node/issues"
+    "url": ""
   },
-  "homepage": "https://github.com/GeekyGeeky/es6_setup_node#readme",
+  "homepage": "",
   "dependencies": {
     "@iamtraction/google-translate": "^1.1.2",
     "axios": "^0.27.2",
