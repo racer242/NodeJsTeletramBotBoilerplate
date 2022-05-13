@@ -66,20 +66,27 @@ class TelegramBot {
     }
     this.bot.use(session());
     this.bot.use(this.i18n.middleware());
-    this.bot.use(commandMiddleware);
+    this.bot.use((ctx, next) => {
+      try {
+        commandMiddleware(ctx, next);
+      } catch (e) {
+        console.log(e);
+        next();
+      }
+    });
     this.bot.use((ctx, next) => {
       this.initCtx(ctx);
       next();
     });
 
-    this.bot.start((ctx) => {
+    this.bot.start(async (ctx) => {
       this.setCommandsMenu(ctx);
-      ctx.replyWithHTML(
+      await ctx.replyWithHTML(
         ctx.i18n.t("start", {
           username: ctx.from.username,
         })
       );
-      ctx.replyWithHTML(ctx.i18n.t("help"));
+      await ctx.replyWithHTML(ctx.i18n.t("help"));
     });
 
     this.bot.help((ctx) => {
